@@ -15,7 +15,6 @@ header {
 
 header:hover {
     width: 206px;
-    justify-content: left;
 }
 
 .logo {
@@ -23,7 +22,6 @@ header:hover {
     height: 34px;
     margin-top: 44px;
     margin-left: calc(50% - 34px);
-    transition: all linear;
 }
 
 header:hover .logo {
@@ -36,7 +34,6 @@ header:hover .logo {
     background: var(--seperate);
     margin-left: calc(50% - 31.12px);
     margin-top: 15px;
-    transition: all linear;
 }
 
 header:hover .line1 {
@@ -44,14 +41,6 @@ header:hover .line1 {
     margin-left: 39px;
 }
 
-/*
-.home {
-    padding: 16px 32px;
-    margin-left: 11px;
-    background-color: #FFFFFF;
-    border-radius: 25px 0px 0px 25px;
-}
-*/
 .frame {
     display: flex;
     width: 25px;
@@ -75,7 +64,6 @@ header:hover .games {
 
 a {
     text-decoration: none;
-    transition: all linear;
 }
 
 a div {
@@ -102,7 +90,14 @@ header:hover a div {
     font-weight: normal;
     font-size: 16px;
     transform: translate(30%, -250%);
-    transition: all linear;
+}
+
+nav a:hover div {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(673%) hue-rotate(159deg) brightness(93%) contrast(103%);
+}
+
+nav a:hover img {
+    filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(673%) hue-rotate(159deg) brightness(93%) contrast(103%);
 }
 
 footer p {
