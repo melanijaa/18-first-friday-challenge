@@ -6,15 +6,16 @@ body {
 header {
     width: 100px;
     height: 100vh;
-    background: var(--header);
+    background-color: var(--header);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all .5s linear;
+    transition: all linear;
     display: grid;
     justify-content: center;
 }
 
 header:hover {
     width: 206px;
+    justify-content: left;
 }
 
 .logo {
@@ -22,7 +23,11 @@ header:hover {
     height: 34px;
     margin-top: 44px;
     margin-left: calc(50% - 34px);
-    transition-property: all;
+    transition: all linear;
+}
+
+header:hover .logo {
+    margin-left: 69px;
 }
 
 .line1 {
@@ -31,15 +36,32 @@ header:hover {
     background: var(--seperate);
     margin-left: calc(50% - 31.12px);
     margin-top: 15px;
+    transition: all linear;
 }
 
+header:hover .line1 {
+    width: 128.22px;
+    margin-left: 39px;
+}
+
+/*
+.home {
+    padding: 16px 32px;
+    margin-left: 11px;
+    background-color: #FFFFFF;
+    border-radius: 25px 0px 0px 25px;
+}
+*/
 .frame {
     display: flex;
     width: 25px;
     height: 25px;
     transform: translateX(70%);
-    margin-top: 32px;
-    translate: all;
+    margin-top: 42px;
+}
+
+header:hover .frame {
+    transform: translate(50%, -100% );
 }
 
 .games {
@@ -47,24 +69,48 @@ header:hover {
     transform: translateX(25%);
 }
 
-.bottom-links {
+header:hover .games {
+    transform: translate(20%, -100% );
+}
+
+a {
+    text-decoration: none;
+    transition: all linear;
+}
+
+a div {
+    display: none;
+}
+
+a:hover {
+    display: inline-block;
+    background-color: #fff;
+    width: 195px;
+    height: 57px;
+    margin-left: 11px;
+    margin-top: 16px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+a div:hover {
+    display: inline-block;
+    color: var(--hyperLink);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    transform: translate(30%, -250%);
+}
+
+footer p {
     position: absolute;
     bottom: 0;
-    left: 547px;
-    padding: 10px;
-}
-
-.line2 {
+    left: 50%;
+    transform: translateX(-50%);
     width: 346.01px;
-    height: 1px;
-    background: var(--line);
+    color: var(--text);
+    padding: 10px;
+    font-size: 11px;
+    border-top: 1px solid var(--line);
+    text-align: center;
 }
 
-p {
-    color: var(--text);
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: normal;
-    margin-top: 5px;
-    margin-left: 100px;
-}
