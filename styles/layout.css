@@ -82,23 +82,27 @@ a div {
     display: none;
 }
 
-a:hover {
+header:hover a {
     display: inline-block;
-    background-color: #fff;
     width: 195px;
     height: 57px;
+    border-radius: 25px 0px 0px 25px;
     margin-left: 11px;
     margin-top: 16px;
-    border-radius: 25px 0px 0px 25px;
 }
 
-a div:hover {
-    display: inline-block;
+a:hover {
+    background-color: #fff;
+}
+
+header:hover a div {
+    display: flex;
     color: var(--hyperLink);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     transform: translate(30%, -250%);
+    transition: all linear;
 }
 
 footer p {
