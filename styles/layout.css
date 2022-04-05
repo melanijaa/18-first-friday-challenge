@@ -49,8 +49,18 @@ header:hover .line1 {
     margin-top: 42px;
 }
 
+.icon {
+    position: absolute;
+    top: 16%;
+    left: 11px;
+}
+
 header:hover .frame {
     transform: translate(50%, -100% );
+}
+
+header:hover .icon {
+    display: none;
 }
 
 .games {
