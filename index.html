@@ -15,35 +15,54 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script src="./js/date-time.js" defer></script>
 </head>
-<body>
+<body onload="initClock()">
     <header>
         <nav>
-            <img class="logo" src="./assets/logo.svg" alt="logo">
+            <img class="logo" src="./img/nav-bar/logo.svg" alt="logo">
             <div class="line1"></div>
-            <a class="home" href="http://www.example.com/">
-               <img class="icon" src="./assets/icon-bg.png" alt="icon">
-                <img class="frame" src="./assets/home.png" alt="home">
+            <a href="#">
+                <img class="icon-bg" src="./img/nav-bar/icon-bg.png" alt="icon-bg">
+                <img class="icon" src="./img/nav-bar/home.png" alt="home">
                 <div>Home</div>
             </a>
-            <a href="http://www.example.com/">
-                <img class="frame" src="./assets/calendar.png" alt="calendar">
+            <a href="#">
+                <img class="icon" src="./img/nav-bar/calendar.png" alt="calendar">
                 <div>Calendar</div>
             </a>
-            <a href="http://www.example.com/">
-                <img class="frame" src="./assets/fe.png" alt="fe">
+            <a href="#">
+                <img class="icon" src="./img/nav-bar/fe.png" alt="fe">
                 <div>FE</div>
             </a>
-            <a href="http://www.example.com/">
-                <img class="games frame" src="./assets/games.png" alt="games">
+            <a href="#">
+                <img class="games icon" src="./img/nav-bar/games.png" alt="games">
                <div>Games</div>
             </a>
         </nav>
     </header>
-    <main>
-    </main>
+    <div class="main">
+        <h1 class="greeting">Good morning, [Jūsų vardas]</h1>
+        <div class="date-time">
+            <div class = "date">
+                <span id="dayname">Diena</span>,
+                <span id="month">Menesis</span>,
+                <span id="daynum">00</span>,
+                <span id="year">Metai</span>
+            </div>
+            <div class = "time">
+                <span id="hour">00</span>:
+                <span id="minute">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+    </div>
+        <img src="./img/main/main-img.png" alt="laptop" class="main-img">
+        <p class="quote">“First, solve the problem. Then, write the code.” - John Johnson</p>
     <footer>
-        <p>&copy; Baltic Institute of Technology</p>
+        <p class="copyright">&copy; Baltic Institute of Technology</p>
     </footer>
 </body>
 </html>

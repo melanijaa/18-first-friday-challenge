@@ -13,8 +13,11 @@ body {
 :root {
     --body: #EBEEF5;
     --header: #F7F6FF;
-    --seperate: #C4C4C4;
-    --line: #02577A;
+    --header-line: #C4C4C4;
+    --footer-line: #02577A;
     --text: #02577A;
     --hyperLink : #C4C4C4;
+    --main-text: rgba(0, 0, 0, 1);
+    --quote-frame: rgba(2, 87, 122, 1);
+    --date-time: rgba(255, 255, 255, 1);
 }
