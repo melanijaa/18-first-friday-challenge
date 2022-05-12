@@ -3,187 +3,82 @@ body {
     background-color: var(--body);
 }
 
-nav {
-    position: fixed;
-    display: block;
-    background-color: var(--header);
-    width: 100px;
-    height: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    z-index: 1;
-}
-
-nav:hover {
-    width: 206px;
-}
-
-.logo {
-    width: 68px;
-    height: 34px;
-    margin-top: 44px;
-    margin-left: calc(50% - 34px);
-}
-
-nav:hover .logo {
-    margin-left: 69px;
-}
-
-.line1 {
-    width: 62.24px;
-    height: 2px;
-    background: var(--header-line);
-    margin-left: calc(50% - 31.12px);
-    margin-top: 15px;
-}
-
-nav:hover .line1 {
-    width: 128.22px;
-    margin-left: 39px;
-}
-
-.icon {
+main {
     display: flex;
-    width: 25px;
-    height: 25px;
-    transform: translateX(70%);
-    margin-top: 42px;
-}
-
-.icon-bg {
-    position: absolute;
-    top: 16%;
-    left: 11px;
-}
-
-nav:hover .icon {
-    transform: translate(50%, -100% );
-}
-
-nav:hover .icon-bg {
-    display: none;
-}
-
-.games {
-    width: 40px;
-    transform: translateX(25%);
-}
-
-nav:hover .games {
-    transform: translate(20%, -100% );
-}
-
-a {
-    text-decoration: none;
-}
-
-a div {
-    display: none;
-}
-
-nav:hover a {
-    display: inline-block;
-    width: 195px;
-    height: 57px;
-    border-radius: 25px 0px 0px 25px;
-    margin-left: 11px;
-    margin-top: 16px;
-    transition: 0.1s;
-}
-
-a:hover {
-    background-color: #fff;
-}
-
-nav:hover a div {
-    display: flex;
-    color: var(--hyperLink);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    transform: translate(30%, -250%);
-}
-
-nav a:hover div {
-    filter: brightness(0)
-    saturate(100%)
-    invert(24%)
-    sepia(95%)
-    saturate(673%)
-    hue-rotate(159deg)
-    brightness(93%)
-    contrast(103%);
-}
-
-nav a:hover img {
-    filter: brightness(0)
-    saturate(100%)
-    invert(24%)
-    sepia(95%)
-    saturate(673%)
-    hue-rotate(159deg)
-    brightness(93%)
-    contrast(103%);
-}
-
-.greeting {
-    width: 341px;
-    height: 80px;
-    color: var(--main-text);
-    font-style: normal;
+    justify-content: space-between;
+    align-items: center;
+    margin: 56px auto 30px; /*FIX*/
+    width: 90%;
+    max-width: 1267px;
     font-weight: 500;
     font-size: 36px;
-    line-height: 44px;
 }
 
-.date-time {
-    background-color: var(--date-time);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 15px 10px;
-    width: 516px;
-    height: 147px;
-    border-radius: 25px;
-}
-
-.date {
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-}
-
-.time {
-    display: flex;
-    font-size: 60px;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-}
-
-.time span:not(:last-child) {
-    position: relative;
-    margin: 0 6px;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-    text-align: center;
+main .greeting {
+    max-width: 341px;
+    margin-left: 106px;
+    font-weight: 500;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--main-text);
 }
 
 .main-img {
-    width: calc(100% - 97px);
-    z-index: -1;
-    margin-left: 97px;
+    background-image: linear-gradient(0deg, rgba(237, 236, 243, 0.46), rgba(237, 236, 243, 0.46)), url(../img/main/main-img.png);
+    background-repeat: no-repeat;
+    height: 431px;
+    background-size: cover;
+    background-position: center;
 }
 
 .quote {
-    color: var(--main-text);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
     border: 2px solid var(--quote-frame);
     border-radius: 25px;
-    padding: 15px 150px;
+    padding: 49px 0;
+    width: 70%;
+    max-width: 898px;
+    text-align: center;
+    margin: 43px auto;
+}
+
+section {
+    font-weight: 500;
+}
+  
+section:first-child {
+    margin-left: 100px;
+}
+  
+@media only screen and (max-width: 1080px) {
+    main {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-left: 125px;
+      width: auto;
+    }
+    main .container {
+      padding: 22px 20px;
+    }
+    main .greeting {
+      margin: 33px 0 0 16px;
+    }
+  }
+  
+@media only screen and (max-width: 768px) {
+    .quote {
+      padding: 40px 64px;
+      max-width: 433px;
+      width: auto;
+      margin-left: 106px;
+    }
+  
+    footer {
+      left: calc(50% + 50px);
+    }
+  
+    .home-img {
+      height: 476px;
+    }
 }
 
 .copyright {
@@ -195,9 +90,4 @@ nav a:hover img {
     line-height: 13px;
     border-top: 1px solid var(--header-line);
     text-align: center;
-}
-
-.main {
-    display: flex;
-    background-color: aqua;
 }

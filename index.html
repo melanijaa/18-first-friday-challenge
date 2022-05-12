@@ -16,34 +16,38 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/date.time.css">
     <script src="./js/date-time.js" defer></script>
+    <!--
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+    </style>
+    -->
 </head>
 <body onload="initClock()">
-    <header>
-        <nav>
+        <nav class="nav">
             <img class="logo" src="./img/nav-bar/logo.svg" alt="logo">
             <div class="line1"></div>
-            <a href="#">
-                <img class="icon-bg" src="./img/nav-bar/icon-bg.png" alt="icon-bg">
+            <a href="http://localhost:3000/#" class="icon-bg">
                 <img class="icon" src="./img/nav-bar/home.png" alt="home">
-                <div>Home</div>
-            </a>
+                <h6>Home</h6>
+            </div>
             <a href="#">
                 <img class="icon" src="./img/nav-bar/calendar.png" alt="calendar">
-                <div>Calendar</div>
+                <h6>Calendar</h6>
             </a>
             <a href="#">
                 <img class="icon" src="./img/nav-bar/fe.png" alt="fe">
-                <div>FE</div>
+                <h6>FE</h6>
             </a>
             <a href="#">
                 <img class="games icon" src="./img/nav-bar/games.png" alt="games">
-               <div>Games</div>
+                <h6>Games</h6>
             </a>
         </nav>
-    </header>
-    <div class="main">
-        <h1 class="greeting">Good morning, [Jūsų vardas]</h1>
+    <main class="clock">
+        <h1 class="greeting">Good morning, Melanija</h1>
         <div class="date-time">
             <div class = "date">
                 <span id="dayname">Diena</span>,
@@ -58,9 +62,11 @@
                 <span id="period">AM</span>
             </div>
         </div>
-    </div>
-        <img src="./img/main/main-img.png" alt="laptop" class="main-img">
+    </main>
+    <section class="main-img"></section>
+    <section>
         <p class="quote">“First, solve the problem. Then, write the code.” - John Johnson</p>
+    </section>
     <footer>
         <p class="copyright">&copy; Baltic Institute of Technology</p>
     </footer>

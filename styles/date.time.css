@@ -1,0 +1,31 @@
+/* TIME AND DATE STARTS */
+
+.date-time {
+    background-color: var(--date-time);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 22px 96px;
+    border-radius: 25px;
+}
+
+.date {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time {
+    display: block;
+    font-size: 36px;
+    text-align: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* TIME AND DATE ENDS */
