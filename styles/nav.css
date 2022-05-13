@@ -1,5 +1,5 @@
 
-nav {
+.nav {
     position: fixed;
     background-color: var(--header);
     width: 100px;
@@ -11,18 +11,19 @@ nav {
     left: 0;
 }
 
-nav:hover {
+.nav:hover {
+    max-width: 206px;
     width: 206px;
 }
 
-.logo {
+.nav .logo {
     margin: 52px 0 24px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.line1 {
+.nav .line1 {
     width: 62.24px;
     max-width: 62.24px;
     height: 2px;
@@ -33,70 +34,68 @@ nav:hover {
     transition: max-width 0.4s ease-in 0s;
 }
 
-nav:hover .line1 {
+.nav:hover .line1 {
     width: 128.22px;
     max-width: 128.22px;
 }
 
-.icon {
-    display: flex;
-    width: 25px;
-    height: 25px;
-    transform: translateX(70%);
-    margin-top: 42px;
-}
-
-.icon-bg {
-    position: absolute;
-    top: 16%;
-    left: 11px;
-}
-
-nav:hover .icon {
-    transform: translate(50%, -100% );
-}
-
-nav:hover .icon-bg {
-    display: none;
-}
-
-.games {
-    width: 40px;
-    transform: translateX(25%);
-}
-
-nav:hover .games {
-    transform: translate(20%, -100% );
-}
-
-a div {
-    display: none;
-}
-
-nav:hover a {
-    display: inline-block;
-    width: 195px;
-    height: 57px;
-    border-radius: 25px 0px 0px 25px;
+.nav .icon-bg {
+    border-radius: 25px 0 0 25px;
     margin-left: 11px;
-    margin-top: 16px;
-    transition: 0.1s;
-}
-
-a:hover {
-    background-color: #fff;
-}
-
-nav:hover a div {
+    padding: 0;
+    background-color: transparent;
+    margin: 34px 0 34px 11px;
     display: flex;
+    align-items: center;
+}
+
+.nav .icon-bg:last-child .icon {
+    left: 30px;
+}
+
+.nav .icon-bg:last-child a {
+    margin-left: 49px;
+}
+
+.nav .icon-bg.active {
+    padding: 16px;
+    background-color: var(--date-time);
+}
+
+.nav .icon-bg.active .icon {
+    left: 26px;
+}
+
+.nav .icon-bg.active a {
+    color: var(----text);
+    margin-left: 42px;
+}
+
+.nav .icon-bg .icon {
+   position: relative;
+   left: 37px;
+}
+
+.nav .icon-bg a {
+    position: relative;
+    margin-left: 56px;
     color: var(--hyperLink);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    transform: translate(30%, -250%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    transition-delay: 0.2s;
 }
 
-nav a:hover div {
+.nav .icon-bg a:hover {
+    text-decoration: underline;
+}
+
+.nav:hover a {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav div:hover a {
     filter: brightness(0)
     saturate(100%)
     invert(24%)
@@ -107,7 +106,7 @@ nav a:hover div {
     contrast(103%);
 }
 
-nav a:hover img {
+.nav div:hover img {
     filter: brightness(0)
     saturate(100%)
     invert(24%)
@@ -116,4 +115,8 @@ nav a:hover img {
     hue-rotate(159deg)
     brightness(93%)
     contrast(103%);
+}
+
+main .time {
+    color: var(--text);
 }
