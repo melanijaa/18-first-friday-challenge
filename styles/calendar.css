@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+}
