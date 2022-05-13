@@ -4,6 +4,7 @@ body {
     display: grid;
     place-items: center;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -13,4 +14,77 @@ body {
     height: 400px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    text-align: center;
+    text-shadow: 0 0.3px 0.5px rgba(0, 0, 0, .1);
+}
+
+.container .month i {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container .month h1 {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: uppercase;
+}
+
+.container .month p {
+    font-size: 5px;
+}
+
+.container .weekdays {
+    width: 100%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div {
+    font-size: 10px;
+    font-weight: 400;
+    width: calc(380px/7);
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.days div {
+    font-size: 18px;
+    width: calc(350px/7);
+    /*height: 80px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+    border: 2px solid var(--text);
+    border-radius: 25px;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: var(--text);
+    border-radius: 25px 25px;
 }
