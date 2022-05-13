@@ -1,4 +1,3 @@
-/* TIME AND DATE STARTS */
 
 .date-time {
     background-color: var(--date-time);
@@ -27,5 +26,3 @@
     letter-spacing: 3px;
     text-align: center;
 }
-
-/* TIME AND DATE ENDS */
