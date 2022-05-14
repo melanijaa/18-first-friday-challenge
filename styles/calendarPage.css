@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.nav .icon-bg .home {
+    filter: invert(78%)
+    sepia(29%)
+    saturate(0%)
+    hue-rotate(320deg)
+    brightness(108%)
+    contrast(69%);
+}
+
+.nav .icon-bg.active .icon {
+    left: 20px;
+    filter: brightness(0)
+    saturate(100%)
+    invert(24%)
+    sepia(95%)
+    saturate(673%)
+    hue-rotate(159deg)
+    brightness(93%)
+    contrast(103%);
+}

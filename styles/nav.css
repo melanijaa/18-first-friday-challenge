@@ -52,15 +52,15 @@
 .nav .icon-bg .games {
     margin-left: -7px;
 }
-
+/*
 .nav .icon-bg:last-child .icon {
-    left: 30px;
+    left: 90px;
 }
 
 .nav .icon-bg:last-child a {
     margin-left: 49px;
 }
-
+*/
 .nav .icon-bg.active {
     padding: 16px;
     background-color: var(--date-time);
