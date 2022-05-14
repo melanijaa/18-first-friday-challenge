@@ -7,7 +7,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 56px auto 30px; /*FIX*/
+    margin: 56px auto 30px;
     width: 90%;
     max-width: 1267px;
     font-weight: 500;
