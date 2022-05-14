@@ -23,6 +23,9 @@ body {
     --main-text: rgba(0, 0, 0, 1);
     --quote-frame: rgba(2, 87, 122, 1);
     --date-time: rgba(255, 255, 255, 1);
+    --red: rgba(252, 0, 0, 1);
+    --yellow: rgba(252, 227, 0, 1);
+    --green: rgba(81, 252, 0, 1);
 }
 
 a {

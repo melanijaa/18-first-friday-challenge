@@ -1,10 +1,10 @@
 .container {
     background-color: var(--date-time);
-    position: relative;
+    
     width: 576px;
     height: 576px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .container .month {
