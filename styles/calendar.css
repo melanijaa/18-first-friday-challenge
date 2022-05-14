@@ -1,64 +1,77 @@
 .container {
-    background-color: white;
+    background-color: var(--date-time);
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 576px;
+    height: 576px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
 }
 
 .container .month {
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2px;
+    padding: 0 110px;
     text-align: center;
-    text-shadow: 0 0.3px 0.5px rgba(0, 0, 0, .1);
 }
 
-.container .month i {
-    font-size: 15px;
+.month i {
+    font-size: 20px;
     cursor: pointer;
 }
 
-.container .month h1 {
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: uppercase;
+.month h1 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 3px;
 }
 
-.container .month p {
-    font-size: 5px;
+.month p {
+    font-size: 16px;
 }
 
-.container .weekdays {
+.weekdays {
     width: 100%;
-    padding: 0 4px;
+    height: 80px;
+    padding: 0 6.4px;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .weekdays div {
-    font-size: 10px;
-    font-weight: 400;
-    width: calc(380px/7);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--header-line);
+    width: calc(543px / 7);
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hr {
+    position: relative;
+    border-top: 1px solid var(--header-line);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
 }
 
 .days {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 4px;
+    padding: 3.2px;
 }
 
 .days div {
-    font-size: 18px;
-    width: calc(350px/7);
-    /*height: 80px;*/
+    font-size: 24px;
+    font-weight: 500;
+    margin: 4.8px;
+    width: calc(481px / 7);
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,8 +79,8 @@
 }
 
 .days div:hover:not(.today) {
-    border: 2px solid var(--text);
-    border-radius: 25px;
+    border: 3.2px solid var(--text);
+    border-radius: 50%;
 }
 
 .prev-date,
@@ -77,5 +90,5 @@
 
 .today {
     background-color: var(--text);
-    border-radius: 25px 25px;
+    border-radius: 50%;
 }
