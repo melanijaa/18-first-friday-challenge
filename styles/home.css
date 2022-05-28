@@ -96,8 +96,8 @@ footer {
 
 @media only screen and (max-width: 576px) {
   main .date-time {
-    width: 350px;
-    padding: 10px 59px;
+    width: 341px;
+    padding: 20px 20px;
   }
 
   main .time {
