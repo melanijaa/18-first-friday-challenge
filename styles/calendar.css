@@ -90,15 +90,41 @@ hr {
     color: white;
   }
 
-@media  only screen and (max-width: 575px) {
+@media only screen and (max-width: 1280px) {
   .calendar {
-    width: 449px;
+    width: 500px;
     height: 473px;
-    margin-left: 100px;
+  }
+
+  .weekdays {
+    height: 35px;
+    margin-left: 53px;
   }
 
   .month {
-    padding: 0px 9rem;
+    padding: 0px 8rem;
+    height: 90px;
+  }
+
+  .days {
+    margin-left: 32px;
+  }
+
+  .days div {
+    margin: 1px;
+    height: 56px;
+    width: calc(26.2rem / 7);
+  }
+
+  hr {
+    width: 397.16px;
+  }
+}
+
+@media  only screen and (max-width: 991px) {
+  .calendar {
+    width: 435px;
+    margin-left: 100px;
   }
   
   .weekdays {
@@ -108,22 +134,18 @@ hr {
     margin-left: 35px;
     padding: 0;
   }
+
   .weekdays div {
     letter-spacing: 2px;
     font-size: 20px;
   }
   
-  hr {
-    width: 397.16px;
-  }
-  
   .days {
-    margin-left: 21px;
+    margin-left: 15px;
   }
   
   .days div {
-    width: calc(26.2rem / 7);
-    margin: -1px;
-    height: 62px;
+    width: calc(24.2rem / 7);
+    height: 55px;
   }
 }

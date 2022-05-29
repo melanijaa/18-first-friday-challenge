@@ -30,8 +30,6 @@
     contrast(103%);
 }
 
-
-
 .main1 {
     display: flex;
     gap: 30px;
@@ -115,11 +113,28 @@
     right: 56.43px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1280px) {
+    .main1 .box {
+        width: 500px;
+        height: 127.66px;
+        padding: 4px;
+    }
+
+    .h1 {
+        margin-left: 38px;
+    }
+
+    .tip {
+        margin-left: 38px;
+    }
+
+    .badges {
+        margin-left: 38px;
+    }
     
 }
 
-@media  only screen and (max-width: 575px) {
+@media  only screen and (max-width: 991px) {
     .containerOne {
         margin-left: 100px;
     }
@@ -129,7 +144,7 @@
     }
 
     .main1 .box {
-        width: 449px;
+        width: 435px;
         height: 105.32px;
         padding: 6px;
     }
