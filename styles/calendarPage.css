@@ -159,8 +159,12 @@
         width: 60px;
         height: 60px;
         padding: 20px 21px;
-        margin-left: 480px;
         font-size: 21px;
         margin-top: -20px;
+        margin-left: 75%;
+    }
+
+    .fa-plus:hover {
+        padding: 18px 19px;
     }
 }
