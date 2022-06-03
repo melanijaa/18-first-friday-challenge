@@ -22,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./js/rockpaperscissors.js" defer></script>
 </head>
 <body>
     <nav class="nav">
@@ -44,8 +45,28 @@
             <a href="games.html" >Games</a>
         </div>
     </nav>
+    <div class="selections">
+        <button class="selection" data-selection="rock">✊</button>
+        <button class="selection" data-selection="paper">✋</button>
+        <button class="selection" data-selection="scissors">✌</button>
+      </div>
+      <div class="results">
+        <div>
+          You
+          <span class="result-score" data-your-score>0</span>
+        </div>
+        <div data-final-column>
+          Computer
+          <span class="result-score" data-computer-score>0</span>
+        </div>
+        <!-- <div class="result-selection winner">✊</div>
+        <div class="result-selection">✌</div> -->
+      </div>
+      <!--
     <footer>
     <p>&copy; Baltic Institute of Technology</p>
     </footer>
+      -->
+
 </body>
 </html>
