@@ -29,3 +29,63 @@
     brightness(93%)
     contrast(103%);
 }
+body {
+  background-color: var(--body);
+}
+.background {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  color: var(--quote-frame);
+  font-size: 25px;
+}
+
+.container {
+  margin-left: 400px;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.tile {
+  border: 1px solid var(--date-time);
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.playerX {
+  color: #09C372;
+}
+
+.playerO {
+  color: #498AFB;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  position: relative;
+  top: 60%;
+  left: 20%;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #FF3860;
+}
