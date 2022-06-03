@@ -1,3 +1,8 @@
+body {
+    width: 100%;
+    background-color: var(--body);
+}
+
 .nav .icon-bg .home {
     filter: invert(78%)
     sepia(29%)
@@ -28,4 +33,56 @@
     hue-rotate(159deg)
     brightness(93%)
     contrast(103%);
+}
+
+.gamesDiv {
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -115%);
+}
+
+.gameSection {
+    width: 222px;
+    height: 200px;
+    border-radius: 25px;
+    background-color: var(--quote-frame);
+}
+
+.gamesPage {
+    position: relative;
+    top: 90px;
+    font-size: 16px;
+    font-weight: 500px;
+    color: var(--date-time);
+    padding: 87px 72px;
+}
+
+.ROCKPAPERSCISSORS {
+    padding: 88px 38px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 11px 0;
+    width: 70%;
+    max-width: 346px;
+    color: var(--text);
+    font-size: 11px;;
+    border-top: 1px solid var(--header-line);
+    text-align: center;
+}
+
+@media  only screen and (max-width: 991px) {
+    .gamesDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 420px;
+    }
 }
