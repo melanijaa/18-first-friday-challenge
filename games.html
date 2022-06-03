@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
+    <title>Games</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -17,15 +17,11 @@
     <link rel="stylesheet" href="./styles/layout.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/date.time.css">
-    <link rel="stylesheet" href="./styles/calendar.css">
-    <link rel="stylesheet" href="./styles/calendarPage.css">
-    <script src="./js/calendar.js" defer></script>
+    <link rel="stylesheet" href="./styles/games.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="calendar.js" defer></script>
 </head>
 <body>
     <nav class="nav">
@@ -35,7 +31,7 @@
             <img src="./img/nav-bar/home.png" alt="home" class="icon home">
             <a href="index.html" >Home</a>
         </div>
-        <div class="icon-bg active">
+        <div class="icon-bg">
             <img src="./img/nav-bar/calendar.png" alt="calendar" class="icon">
             <a href="calendar.html">Calendar</a>
         </div>
@@ -43,54 +39,11 @@
             <img src="./img/nav-bar/fe.png" alt="fe" class="icon" >
             <a href="feComponents.html" >FE</a>
         </div>
-        <div class="icon-bg">
+        <div class="icon-bg active">
             <img src="./img/nav-bar/games.png" alt="games" class="icon games">
             <a href="games.html" >Games<a>
         </div>
     </nav>
-    <div class="main1">
-        <div class="containerOne">
-            <section class="box">
-                <h1 class="h1">SCSS</h1>
-                <p class="tip">Try mixin</p>
-                <span class="badges red"></span>
-                <a href="#" class="dots"><img src="./img/calendar/dots.png" alt="dots"></a>
-            </section>
-            <section class="box">
-                <h1 class="h1">React</h1>
-                <p class="tip">Lift state up</p>
-                <span class="badges yellow"></span>
-                <a href="#" class="dots"><img src="./img/calendar/dots.png" alt="dots"></a>
-            </section>
-            <section class="box">
-                <h1 class="h1">PHP</h1>
-                <p class="tip">Use isset()</p>
-                <span class="badges green"></span>
-                <a href="#" class="dots"><img src="./img/calendar/dots.png" alt="dots"></a>
-            </section>
-        </div>
-            <div class="calendar">
-              <div class="month">
-                <i class="fas fa-angle-left prev"></i>
-                <div class="date">
-                  <h1></h1>
-                  <p></p>
-                </div>
-                <i class="fas fa-angle-right next"></i>
-              </div>
-              <div class="weekdays">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-              </div>
-              <hr/>
-              <div class="days"></div>
-            </div>
-    </div>
     <a href="#" class="fas fa-solid fa-plus"></a>
     <footer>
     <p>&copy; Baltic Institute of Technology</p>
